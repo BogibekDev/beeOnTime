@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bk_img"
+    android:orientation="vertical"
+    tools:context=".ui.admin.activity.AttendanceActivity">
+    <LinearLayout
+        android:id="@+id/statusBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="16dp">
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Azamatjon"
+            android:textColor="@color/white"
+            android:textSize="32sp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/ivReport"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_export"
+            app:tint="@color/white" />
+        <ImageView
+            android:id="@+id/ivFilter"
+            android:layout_marginStart="16dp"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_filter"
+            app:tint="@color/white" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llFilter"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnFrom"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#D6DBED"
+                android:fontFamily="@font/myriad"
+                android:gravity="start|center"
+                android:letterSpacing="0.08"
+                android:paddingVertical="16dp"
+                android:text="@string/from"
+                android:textAllCaps="false"
+                android:textColor="#5a6684"
+                android:textSize="14sp"
+                app:cornerRadius="12dp"
+                app:icon="@drawable/ic_down"
+                app:iconGravity="end"
+                app:iconSize="12dp"
+                app:iconTint="#5a6684"
+                tools:ignore="SpUsage" />
+
+            <Space
+                android:layout_width="16dp"
+                android:layout_height="wrap_content" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnTo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:enabled="false"
+                android:fontFamily="@font/myriad"
+                android:gravity="start|center"
+                android:letterSpacing="0.08"
+                android:paddingVertical="16dp"
+                android:text="@string/to"
+                android:textAllCaps="false"
+                android:textColor="#5a6684"
+                android:textSize="14sp"
+                app:backgroundTint="@color/button_background_tint"
+                app:cornerRadius="12dp"
+                app:icon="@drawable/ic_down"
+                app:iconGravity="end"
+                app:iconSize="12dp"
+                app:iconTint="#5a6684"
+                tools:ignore="SpUsage" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="16dp"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:background="@color/second_main"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="50dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_filter"
+                    app:tint="@color/white"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/filter"
+                    android:layout_marginStart="16dp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/myriad_semibold"
+                    android:textSize="24sp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+        </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvAttendance"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/item_attendance" />
+
+
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/main"
+        android:layout_gravity="bottom"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="4dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/llEdit"
+            android:layout_width="0dp"
+            android:background="@color/second_main"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="50dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_edit"
+                app:tint="@color/white"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/edit"
+                android:layout_marginStart="16dp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/myriad_semibold"
+                android:textSize="24sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llRemove"
+            android:layout_marginStart="16dp"
+            android:layout_width="0dp"
+            android:background="@color/red"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="50dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_delete"
+                app:tint="@color/white"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/delete"
+                android:layout_marginStart="16dp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/myriad_semibold"
+                android:textSize="24sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/bottomNavBar"
+        android:layout_width="0dp"
+        android:layout_height="24dp"
+        android:background="#336633"/>
+
+</LinearLayout>

@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Bee On Time 2.0</string>
+    <string name="password">Password</string>
+    <string name="username">Email</string>
+    <string name="bee_on_time">Bee on Time</string>
+    <string name="login">Login</string>
+
+    <string name="_2_0">2.0</string>
+    <string name="forgot_password">Forgot Your Password?</string>
+    <string name="contact_the_hr">Contact the HR</string>
+    <string name="location">Location</string>
+    <string name="delete">Remove</string>
+    <string name="leave_request">Leave Request</string>
+    <string name="in">In</string>
+    <string name="in_">In : </string>
+    <string name="out">OUT</string>
+    <string name="check">Check</string>
+    <string name="leave_form">Leave Form</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="reason">Reason</string>
+    <string name="submit">Submit</string>
+    <string name="m_reason">Reason...</string>
+    <string name="log_out"><u>Log Out</u></string>
+    <string name="add">add_employee</string>
+    <string name="filter">Filter</string>
+    <string name="edit">Edit</string>
+</resources>

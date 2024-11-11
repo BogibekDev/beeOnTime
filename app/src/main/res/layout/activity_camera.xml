@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.user.CameraActivity"
+    tools:ignore="SpUsage">
+
+
+    <androidx.camera.view.PreviewView
+        android:id="@+id/cameraPreview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/frameLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout3" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#000000"
+        app:layout_constraintHeight_percent="0.20"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#000000"
+        app:layout_constraintBottom_toTopOf="@id/unSafeArea"
+        app:layout_constraintHeight_percent="0.20" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/captureButton"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:elevation="0dp"
+        app:backgroundTint="@color/white"
+        app:elevation="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cameraPreview"
+        app:shapeAppearance="@style/RoundFAB" />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnClose"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#6FFFFFFF"
+        android:elevation="0dp"
+        android:src="@drawable/ic_close"
+        app:elevation="0dp"
+        app:fabCustomSize="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/captureButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/captureButton"
+        app:layout_constraintTop_toTopOf="@+id/captureButton"
+        app:shapeAppearance="@style/RoundFAB"
+        app:tint="@color/white" />
+
+    <TextView
+        android:id="@+id/tvCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/myriad_semibold"
+        android:textColor="@color/white"
+        android:textSize="54dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/cameraPreview"
+        app:layout_constraintEnd_toEndOf="@+id/cameraPreview"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cameraPreview" />
+
+    <FrameLayout
+        android:id="@+id/flashView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/unSafeArea"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:background="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="10dp"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Azamat"
+                android:fontFamily="@font/myriad_semibold"
+                android:includeFontPadding="true"
+                android:gravity="start"
+                android:layout_marginHorizontal="16dp"
+                android:textColor="@color/black"
+                android:textSize="32sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginHorizontal="16dp"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tvFrom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="24.12.2000"
+                    android:fontFamily="@font/myriad_semibold"
+                    android:includeFontPadding="true"
+                    android:gravity="start"
+                    android:textColor="@color/black"
+                    android:textSize="24sp"/>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/img"
+                    android:layout_height="16dp"/>
+                <TextView
+                    android:id="@+id/tvTo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="26.12.2000"
+                    android:fontFamily="@font/myriad_semibold"
+                    android:includeFontPadding="true"
+                    android:gravity="start"
+                    android:textColor="@color/black"
+                    android:textSize="24sp"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvReason"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reason : something reasons blabla bla bla bla"
+                android:fontFamily="@font/myriad"
+                android:includeFontPadding="true"
+                android:gravity="start"
+                android:textColor="@color/black"
+                android:layout_marginHorizontal="16dp"
+                android:textSize="24sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_margin="16dp"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/llAccept"
+                    android:layout_width="0dp"
+                    android:background="@color/second_main"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_height="50dp">
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:src="@drawable/ic_check"
+                        app:tint="@color/white"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Accept"
+                        android:layout_marginStart="16dp"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/myriad_semibold"
+                        android:textSize="24sp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llReject"
+                    android:layout_marginStart="16dp"
+                    android:layout_width="0dp"
+                    android:background="@color/red"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_height="50dp">
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:src="@drawable/ic_cancel"
+                        app:tint="@color/white"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Reject"
+                        android:layout_marginStart="16dp"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/myriad_semibold"
+                        android:textSize="24sp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+</LinearLayout>

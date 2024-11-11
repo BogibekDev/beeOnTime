@@ -1,0 +1,42 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.BeeOnTime20" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+
+    <style name="Theme.BeeOnTime20" parent="Base.Theme.BeeOnTime20" />
+
+    <style name="DatePickerTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorPrimary">#5a6684</item>
+        <item name="colorAccent">#5a6684</item>
+        <item name="android:textColorPrimary">#000000</item>
+        <item name="android:windowBackground">#FFFFFF</item>
+        <item name="android:buttonBarPositiveButtonStyle">@style/DialogButtonStyle</item>
+        <item name="android:buttonBarNegativeButtonStyle">@style/DialogButtonStyle</item>
+        <item name="android:buttonBarNeutralButtonStyle">@style/DialogButtonStyle</item>
+    </style>
+
+    <style name="DialogButtonStyle" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:textColor">#5a6684</item>
+    </style>
+
+    <style name="RoundFAB" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="android:radius">40dp</item>
+        <item name="android:backgroundTint">@color/white</item>
+    </style>
+
+
+    <style name="DarkAlertDialog" parent="">
+        <item name="colorPrimary">#000000</item>
+    </style>
+
+
+</resources>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:paddingHorizontal="24dp"
+    android:paddingVertical="24dp"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="Report"
+        android:fontFamily="@font/myriad"
+        android:textColor="@color/black"
+        android:layout_marginBottom="16dp"
+        android:textSize="32sp" />
+
+    <LinearLayout
+        android:id="@+id/llFilter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnFrom"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#D6DBED"
+                android:fontFamily="@font/myriad"
+                android:gravity="start|center"
+                android:letterSpacing="0.08"
+                android:paddingVertical="16dp"
+                android:text="@string/from"
+                android:textAllCaps="false"
+                android:textColor="#5a6684"
+                android:textSize="14sp"
+                app:cornerRadius="12dp"
+                app:icon="@drawable/ic_down"
+                app:iconGravity="end"
+                app:iconSize="12dp"
+                app:iconTint="#5a6684"
+                tools:ignore="SpUsage" />
+
+            <Space
+                android:layout_width="16dp"
+                android:layout_height="wrap_content" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnTo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:enabled="false"
+                android:fontFamily="@font/myriad"
+                android:gravity="start|center"
+                android:letterSpacing="0.08"
+                android:paddingVertical="16dp"
+                android:text="@string/to"
+                android:textAllCaps="false"
+                android:textColor="#5a6684"
+                android:textSize="14sp"
+                app:backgroundTint="@color/button_background_tint"
+                app:cornerRadius="12dp"
+                app:icon="@drawable/ic_down"
+                app:iconGravity="end"
+                app:iconSize="12dp"
+                app:iconTint="#5a6684"
+                tools:ignore="SpUsage" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="16dp"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/bFilter"
+                android:layout_width="0dp"
+                android:background="@color/second_main"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="50dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_export"
+                    app:tint="@color/white"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Report"
+                    android:layout_marginStart="16dp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/myriad_semibold"
+                    android:textSize="24sp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
