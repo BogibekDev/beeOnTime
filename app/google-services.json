@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "62008223462",
-    "project_id": "bee-on-time-42769",
-    "storage_bucket": "bee-on-time-42769.appspot.com"
+    "project_number": "879439666495",
+    "project_id": "beeontime-demo",
+    "storage_bucket": "beeontime-demo.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:62008223462:android:f545956f9225dff1543d27",
+        "mobilesdk_app_id": "1:879439666495:android:c0162b9fb280676835478a",
         "android_client_info": {
           "package_name": "com.jamesmobiledev.beeontime"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyDFMkF67vGNiqt-R2N2OTDa3LwuiZ12pcg"
+          "current_key": "AIzaSyCHkq91jycQ9BRDq3cFMvS2m_gKNAkdfTw"
         }
       ],
       "services": {
